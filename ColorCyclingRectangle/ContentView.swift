@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ColorCyclingRectangle(amount: colorCycle)
+            ColorRectangle(amount: colorCycle)
                 .frame(width: 400, height: 300)
             
             Slider(value: $colorCycle)
@@ -28,7 +28,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ColorCyclingRectangle: View {
+struct ColorRectangle: View {
     
     var amount = 0.0
     var steps = 100
